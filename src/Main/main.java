@@ -22,10 +22,14 @@ public class main {
     static sSorted sorted =new sSorted();
 
     public static void main(String[] args){
+        /**
+         *
         //TODO: printData(filter.filterByName("m"));    ----> get Data By Name
         //TODO: List<Object> list = Arrays.asList(collect.collectByToArrayMethod());
         //TODO: collect.collectAsUnModifiableSet().forEach(System.out::println);
-        sorted.MultiSorted().forEach(System.out::println);
+        //TODO: sorted.MultiSorted().forEach(System.out::println);
+         */
+
     }
 
     private static void printData(List<DataModel> m) {
@@ -54,6 +58,18 @@ public class main {
         collect.collectAsUnModifiableList();
         collect.collectByToListMethod();
         collect.collectByToArrayMethod();
+    }
+
+    public void AllSortedMethods(){
+        sorted.sorted();
+        sorted.sortedById();
+        sorted.sortedByName();
+        sorted.sortedByAge();
+        sorted.sortedByCity();
+        sorted.sortedByMethod();
+        sorted.MultiSorted();
+        sorted.reverseSorted();
+        sorted.compareSorted();
     }
 
 }
