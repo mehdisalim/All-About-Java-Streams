@@ -19,7 +19,7 @@ public class ListOfData {
     public List<DataModel> getData(){
         List<DataModel> list=new ArrayList<>();
         list.add(new DataModel(1,"Omar",20,"Agadir".toLowerCase()));
-        list.add(new DataModel(2,"hassan",25,"Casablanca".toLowerCase()));
+        list.add(new DataModel(2,"Hassan",25,"Casablanca".toLowerCase()));
         list.add(new DataModel(3,"Khadija",17,"Tanger".toLowerCase()));
         list.add(new DataModel(4,"Yassin",10,"Rabat".toLowerCase()));
         list.add(new DataModel(5,"Mehdi",23,"Dakhela".toLowerCase()));

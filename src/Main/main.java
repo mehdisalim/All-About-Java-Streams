@@ -4,6 +4,7 @@ package Main;
 import FakeData.DataModel;
 import Streams.sCollect;
 import Streams.sFilter;
+import Streams.sSorted;
 import org.junit.platform.engine.support.hierarchical.Node;
 
 import java.util.Arrays;
@@ -18,12 +19,13 @@ import java.util.List;
 public class main {
     static sFilter filter=new sFilter();
     static sCollect collect=new sCollect();
+    static sSorted sorted =new sSorted();
 
     public static void main(String[] args){
         //TODO: printData(filter.filterByName("m"));    ----> get Data By Name
         //TODO: List<Object> list = Arrays.asList(collect.collectByToArrayMethod());
         //TODO: collect.collectAsUnModifiableSet().forEach(System.out::println);
-
+        sorted.MultiSorted().forEach(System.out::println);
     }
 
     private static void printData(List<DataModel> m) {
