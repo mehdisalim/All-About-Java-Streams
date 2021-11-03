@@ -2,9 +2,11 @@ package Main;
 
 
 import FakeData.DataModel;
+import Streams.sCollect;
 import Streams.sFilter;
 import org.junit.platform.engine.support.hierarchical.Node;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,12 +17,12 @@ import java.util.List;
 
 public class main {
     static sFilter filter=new sFilter();
+    static sCollect collect=new sCollect();
 
     public static void main(String[] args){
-        //TODO: printData(filter.filterByAge(30));      ----> get Data By Age
         //TODO: printData(filter.filterByName("m"));    ----> get Data By Name
-        //TODO: printData(filter.filterByCity("Ag".toLowerCase()));  ----> get Data By City
-
+        //TODO: List<Object> list = Arrays.asList(collect.collectByToArrayMethod());
+        //TODO: collect.collectAsUnModifiableSet().forEach(System.out::println);
 
     }
 
@@ -40,6 +42,16 @@ public class main {
         filter.filterByBoolean_Condition();
         filter.MultiFilters();
         filter.filterByOverrideMethod();
+    }
+
+    public void AllCollectMethods(){
+        collect.collectAsList();
+        collect.collectAsCollection();
+        collect.collectAsSet();
+        collect.collectAsUnModifiableSet();
+        collect.collectAsUnModifiableList();
+        collect.collectByToListMethod();
+        collect.collectByToArrayMethod();
     }
 
 }
