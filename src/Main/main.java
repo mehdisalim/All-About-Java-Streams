@@ -2,9 +2,7 @@ package Main;
 
 
 import FakeData.DataModel;
-import Streams.sCollect;
-import Streams.sFilter;
-import Streams.sSorted;
+import Streams.*;
 import org.junit.platform.engine.support.hierarchical.Node;
 
 import java.util.Arrays;
@@ -20,6 +18,8 @@ public class main {
     static sFilter filter=new sFilter();
     static sCollect collect=new sCollect();
     static sSorted sorted =new sSorted();
+    static sLimit limit =new sLimit();
+    static sCount count =new sCount();
 
     public static void main(String[] args){
         /**
@@ -70,6 +70,15 @@ public class main {
         sorted.MultiSorted();
         sorted.reverseSorted();
         sorted.compareSorted();
+    }
+
+    public void AllLimitMethods(){
+        limit.limit();
+        limit.limitData();
+    }
+
+    public void AllCountMethods(){
+        count.count();
     }
 
 }
