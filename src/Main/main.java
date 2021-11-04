@@ -20,6 +20,9 @@ public class main {
     static sSorted sorted =new sSorted();
     static sLimit limit =new sLimit();
     static sCount count =new sCount();
+    static sFind find =new sFind();
+    static MaxAndMin maxandmin =new MaxAndMin();
+    static sMap map =new sMap();
 
     public static void main(String[] args){
         /**
@@ -29,6 +32,7 @@ public class main {
         //TODO: collect.collectAsUnModifiableSet().forEach(System.out::println);
         //TODO: sorted.MultiSorted().forEach(System.out::println);
          */
+        map.MapToDouble().forEach(System.out::println);
 
     }
 
@@ -79,6 +83,27 @@ public class main {
 
     public void AllCountMethods(){
         count.count();
+    }
+
+    public void AllFindMethods(){
+        find.findAny();
+        find.findFirst();
+    }
+
+    public void AllMaxAndMinMethods(){
+        maxandmin.max();
+        maxandmin.min();
+    }
+
+    public void AllMapMethods(){
+        map.map();
+        map.MultiMap();
+        map.MapToInt();
+        map.MultiMapToInt();
+        map.MapToDouble();
+        map.MultiMapToDouble();
+        map.MapToLong();
+        map.MultiMapToLong();
     }
 
 }
