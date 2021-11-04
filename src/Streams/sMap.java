@@ -51,7 +51,6 @@ public class sMap {
     public DoubleStream MultiMapToDouble(){
         return stream
                 .mapMultiToDouble((dataModel, intConsumer) -> intConsumer.accept(dataModel.getAge()));
-        
     }
 
     public LongStream MapToLong(){
